@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3"></script>
+    <title>Carousel</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="container">
+        <div ref="slider" class="slider_container flex">
+            <div v-for="item in block" class="block" ref="card" :key="item">
+            </div>
+        </div>
+        <div class="car_btn flex flex_r">
+            <!-- use the boolean to toggle off the animation on each button as you please -->
+            <div @click="canLeft ? moveLeft() : null" @mouseleave="reset"  class="left btn">
+                <i class="ri-arrow-left-s-line"></i>
+            </div>
+            <div @click="canRight ? moveRight() : null" @mouseleave="reset" class="right btn">
+                <i class="ri-arrow-right-s-line"></i>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+
+<script src="./app.js""></script>
+
+</html>

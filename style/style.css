@@ -1,0 +1,75 @@
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex_r {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+i {
+  font-size: 2em;
+  color: white;
+}
+
+.btn {
+  padding: 10px;
+  border-radius: 100%;
+  background-color: #acabab;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.container .slider_container {
+  overflow: visible;
+  gap: 3rem;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-top: 20%;
+}
+
+.container .slider_container .block {
+  height: 25em;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  width: 30%;
+  border: 1px solid grey;
+  -webkit-box-shadow: 1px 1px 16px #9d9b9b;
+          box-shadow: 1px 1px 16px #9d9b9b;
+  background: #efe3e5;
+}
+
+.container .slider_container p {
+  font-size: 2em;
+  -webkit-transform: translateY(7rem);
+          transform: translateY(7rem);
+}
+
+.container .car_btn {
+  -webkit-transform: translateY(-12rem);
+          transform: translateY(-12rem);
+}
+/*# sourceMappingURL=style.css.map */
